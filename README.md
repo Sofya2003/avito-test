@@ -82,13 +82,25 @@
 another moderator has already been assigned to this flat
 ```
 
+### Получение токена без регистрации (/dummyLogin)
+Запрос:
+```
+{
+    "type": "moderator"
+}
+```
+Ответ:
+```
+{"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJSb2xlIjoibW9kZXJhdG9yIiwiZXhwIjoxNzIzNDYyODg2fQ.dih7A4PtEhUM4gvxApcIJjEB4offuuSwipvX2o25k8o"}
+```
+
 ### GET запрос для получения списка квартир в доме
 Ответ:
 ```
 [{"ID":1,"house_number":1,"flat_number":2,"price":14000,"rooms":2,"status":"on moderation","Moderator":""}]
 ```
 
-### GET запрос для подписку на дом
+### GET запрос для подписки на дом
 Ответ:
 ```
 {"message":"Subscribed successfully"}
